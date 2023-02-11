@@ -535,6 +535,9 @@ video {
 .max-w-md {
   max-width: 28rem;
 }
+.max-w-sm {
+  max-width: 24rem;
+}
 .flex-row {
   flex-direction: row;
 }
