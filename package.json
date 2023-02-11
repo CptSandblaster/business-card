@@ -2,12 +2,12 @@
   "name": "business-card",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "docs/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "postcss css/tailwind.css -o src/css/compiled.css",
-    "dev": "npm run build & live-server src --port=8080",
-    "serve": "concurrently \"postcss css/tailwind.css -o src/css/compiled.css --watch\"  \"live-server ./src  --port=8080 --no-css-inject\""
+    "build": "postcss css/tailwind.css -o docs/css/compiled.css",
+    "dev": "npm run build & live-server docs --port=8080",
+    "serve": "concurrently \"postcss css/tailwind.css -o docs/css/compiled.css --watch\"  \"live-server ./docs  --port=8080 --no-css-inject\""
   },
   "repository": {
     "type": "git",
