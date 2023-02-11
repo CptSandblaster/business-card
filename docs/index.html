@@ -8,28 +8,52 @@
     <meta name="author" content="Sebastian" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/compiled.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Playfair+Display+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 </head>
 
-<body>
-    <div class="min-h-screen bg-gradient-to-br from-background to-black">
+<body class="bg-gradient-to-br from-background to-black">
+    <div class="min-h-screen">
         <div id="main" class="flex flex-col items-center justify-center pt-20">
             <img src="/business-card/assets/portrait.png" class="max-w-lg" />
-            <div id="card"
-                class="flex flex-col items-center max-w-xl bg-background rounded-sm min-h-fit shadow-2xl">
+            <div id="card" class="flex flex-col items-center max-w-xl bg-background min-h-fit shadow-2xl mb-20 w-96">
                 <div id="name" class="mt-10">
-                    <p class="text-center font-title text-3xl text-text">Sebastian Alteryd</p>
+                    <p class="text-center font-title text-4xl text-highlight">Sebastian Alteryd</p>
                 </div>
-                <div id="description" class="mt-5 mx-2 p-2 max-w-xs min-w-[300px]">
-                    <p class="font-mono text-text text-center">A driven sailor with two master degrees in engineering and law.</p>
+                <div id="title">
+                    <p class="text-secondary mt-2 text-center">Cybersecurity consultant</p>
+                    <p class="text-secondary text-center">at <a href="https://www.springflod.se/"><u>Springflod</u></a></p>
+                </div>
+                <div id="description" class="my-5 mx-2 w-80">
+                    <div id="engineering" class="flex flex-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-text">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M5.33 3.271a3.5 3.5 0 0 1 4.472 4.474L20.647 18.59l-2.122 2.121L7.68 9.867a3.5 3.5 0 0 1-4.472-4.474L5.444 7.63a1.5 1.5 0 1 0 2.121-2.121L5.329 3.27zm10.367 1.884l3.182-1.768 1.414 1.414-1.768 3.182-1.768.354-2.12 2.121-1.415-1.414 2.121-2.121.354-1.768zm-7.071 7.778l2.121 2.122-4.95 4.95A1.5 1.5 0 0 1 3.58 17.99l.097-.107 4.95-4.95z" />
+                        </svg>
+                        <p class="ml-2 font-mono text-text text-left">Master of Engineering</p>
+                    </div>
+                    <div id="law" class="flex flex-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-text">
+                            <path fill="none" d="M0 0H24V24H0z" />
+                            <path
+                                d="M13 2v1.278l5 1.668 3.632-1.21.633 1.896-3.032 1.011 3.096 8.512C21.237 16.292 19.7 17 18 17c-1.701 0-3.237-.708-4.329-1.845l3.094-8.512L13 5.387V19H17v2H7v-2h4V5.387L7.232 6.643l3.096 8.512C9.237 16.292 7.7 17 6 17c-1.701 0-3.237-.708-4.329-1.845l3.094-8.512-3.03-1.01.633-1.898L6 4.945l5-1.667V2h2zm5 7.103l-1.958 5.386c.587.331 1.257.511 1.958.511.7 0 1.37-.18 1.958-.51L18 9.102zm-12 0l-1.958 5.386C4.629 14.82 5.299 15 6 15c.7 0 1.37-.18 1.958-.51L6 9.102z" />
+                        </svg>
+                        <p class="ml-2 font-mono text-text text-left">Master of Law</p>
+                    </div>
+                </div>
+                <div id="contact-details" class="w-80">
+                    <p class="text-secondary">Email: sebastian@springflod.se</p>
+                    <p class="text-secondary">Tel: +46 72 351 55 10</p>
                 </div>
                 <div id="buttons" class="flex flex-row">
-                    <div id="linkedin"
-                        class="my-5 mx-2 h-20 w-20 hover:animate-pulse">
+                    <div id="linkedin" class="my-5 mx-1 h-20 w-20">
                         <a href="https://www.linkedin.com/in/sebastian-alteryd-1967587a/">
-                            <div class="h-full w-full p-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-full w-full fill-text">
+                            <div class="h-full w-full p-4 hover:animate-pulse">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    class="h-full w-full fill-highlight">
                                     <path fill="none" d="M0 0h24v24H0z" />
                                     <path
                                         d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v14h14V5H5zm2.5 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-1 1h2v7.5h-2V10zm5.5.43c.584-.565 1.266-.93 2-.93 2.071 0 3.5 1.679 3.5 3.75v4.25h-2v-4.25a1.75 1.75 0 0 0-3.5 0v4.25h-2V10h2v.43z" />
@@ -37,11 +61,11 @@
                             </div>
                         </a>
                     </div>
-                    <div id="email"
-                        class="my-5 mx-2 h-20 w-20 hover:animate-pulse">
+                    <div id="email" class="my-5 mx-1 h-20 w-20">
                         <a href="mailto:sebastian@springflod.se">
-                            <div class="h-full w-full p-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-full w-full fill-text">
+                            <div class="h-full w-full p-4 hover:animate-pulse">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    class="h-full w-full fill-highlight">
                                     <path fill="none" d="M0 0h24v24H0z" />
                                     <path
                                         d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 4.238l-7.928 7.1L4 7.216V19h16V7.238zM4.511 5l7.55 6.662L19.502 5H4.511z" />
@@ -49,14 +73,25 @@
                             </div>
                         </a>
                     </div>
-                    <div id="phone"
-                        class="my-5 mx-2 h-20 w-20 ">
-                        <a href="tel:+46722044448">
-                            <div  class="h-full w-full p-3 transition hover:animate-pulse">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-full w-full fill-text">
+                    <div id="phone" class="my-5 mx-1 h-20 w-20">
+                        <a href="tel:+46723515510">
+                            <div class="h-full w-full p-4 hover:animate-pulse">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    class="h-full w-full fill-highlight">
                                     <path fill="none" d="M0 0h24v24H0z" />
                                     <path
                                         d="M9.366 10.682a10.556 10.556 0 0 0 3.952 3.952l.884-1.238a1 1 0 0 1 1.294-.296 11.422 11.422 0 0 0 4.583 1.364 1 1 0 0 1 .921.997v4.462a1 1 0 0 1-.898.995c-.53.055-1.064.082-1.602.082C9.94 21 3 14.06 3 5.5c0-.538.027-1.072.082-1.602A1 1 0 0 1 4.077 3h4.462a1 1 0 0 1 .997.921A11.422 11.422 0 0 0 10.9 8.504a1 1 0 0 1-.296 1.294l-1.238.884zm-2.522-.657l1.9-1.357A13.41 13.41 0 0 1 7.647 5H5.01c-.006.166-.009.333-.009.5C5 12.956 11.044 19 18.5 19c.167 0 .334-.003.5-.01v-2.637a13.41 13.41 0 0 1-3.668-1.097l-1.357 1.9a12.442 12.442 0 0 1-1.588-.75l-.058-.033a12.556 12.556 0 0 1-4.702-4.702l-.033-.058a12.442 12.442 0 0 1-.75-1.588z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="vCard" class="my-5 mx-1 h-20 w-20">
+                        <a href="/business-card/assets/vcard.vcf">
+                            <div class="h-full w-full p-4 hover:animate-pulse">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    class="h-full w-full fill-highlight">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M14 14.252v2.09A6 6 0 0 0 6 22l-2-.001a8 8 0 0 1 10-7.748zM12 13c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm6 6v-3h2v3h3v2h-3v3h-2v-3h-3v-2h3z"/>
                                 </svg>
                             </div>
                         </a>

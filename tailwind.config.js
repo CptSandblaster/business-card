@@ -10,14 +10,13 @@ module.exports = {
     },
     extend: {
       colors: {
-        'primary': '#2F4550',
         'text': '#5CC8FF',
+        'secondary': '#307193',
         'background': '#031927',
-        'light': '#5CC8FF',
-        'accent': '#AF9164'
+        'highlight': '#A39BA8'
       },
       fontFamily: {
-        'title': 'Pacifico'
+        'title': 'Alegreya Sans SC'
       }
     },
   },
