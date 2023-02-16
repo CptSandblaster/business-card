@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "postcss css/tailwind.css -o docs/css/compiled.css",
     "dev": "npm run build & live-server docs --port=8080",
-    "serve": "concurrently \"postcss css/tailwind.css -o docs/css/compiled.css --watch\"  \"live-server ./docs --mount=/business-card:docs --no-css-inject\""
+    "serve": "concurrently \"postcss css/tailwind.css -o docs/css/compiled.css --watch\"  \"live-server ./docs --no-css-inject\""
   },
   "repository": {
     "type": "git",
