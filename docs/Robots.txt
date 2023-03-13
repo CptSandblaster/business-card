@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /private/
+Disallow: /admin/
+Disallow: /assets/
+Disallow: /cgi-bin/
+Sitemap: https://www.sebastian.contact/sitemap.xml
